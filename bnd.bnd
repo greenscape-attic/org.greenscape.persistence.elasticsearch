@@ -1,0 +1,15 @@
+-buildpath:  \
+	junit.osgi,\
+	osgi.core;version=5.0,\
+	org.greenscape.persistence;version=latest,\
+	org.eclipse.osgi.services,\
+	org.greenscape.elasticsearch.client;version=latest,\
+	org.apache.servicemix.bundles.elasticsearch
+Bundle-Version: 1.0.0.${tstamp}
+Private-Package:  \
+	org.greenscape.persistence.elasticsearch,\
+	org.greenscape.persistence.elasticsearch.client
+-dsannotations:  \
+	*
+javac.source=1.8
+javac.target=1.8
